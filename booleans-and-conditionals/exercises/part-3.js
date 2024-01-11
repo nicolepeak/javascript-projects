@@ -37,5 +37,5 @@ If fuelLevel is above 20000 AND engineIndicatorLight is NOT red blinking OR comm
 if (fuelLevel > 20000 && engineIndicatorLight === !"red blinking" || commandOverride) {
     console.log("Clear to launch!")
 } else {
-    console.log ("Launch scrubbed!")
-}
+   
+  console.log ("Launch scrubbed!") }
