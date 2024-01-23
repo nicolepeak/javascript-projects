@@ -4,17 +4,33 @@ let protoArray3 = "space delimited string";
 let protoArray4 = "Comma-spaces, might, require, typing, caution";
 
 strings = [protoArray1, protoArray2, protoArray3, protoArray4];
+let str;
+// do this for each string
+str = protoArray1;
+if (str.includes(',')) {
+  console.log('This string is separated by commas!');
+} else if (str.includes(';')) {
+  console.log('This string is separated by semicolons!');
+} else {
+  console.log('This string is separated by spaces!');
+}
+
 
 //2) 
 function reverseCommas() {
 	//TODO: 1. create and instantiate your variables.
-	let check;
-	let output;
+	let protoArray1Split = protoArray1.split(",").reverse
+	let protoArray1Final = 
 	//TODO: 2. write the code required for this step
+
+// do this for each string
+
+}
+
 
 	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
 	return output;
-}
+
 
 //3)
 function semiDash() {
