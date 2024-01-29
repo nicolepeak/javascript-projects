@@ -8,6 +8,8 @@ function checkFuel(level) {
   }
 }
 
+
+
 function holdStatus(arr){
   if (arr.length < 7) {
     return `Spaces available: ${7-arr.length}.`;
@@ -24,8 +26,37 @@ let cargoHold = ['meal kits', 'space suits', 'first-aid kit', 'satellite', 'gold
 console.log("Fuel level: " + checkFuel(fuelLevel));
 console.log("Hold status: " + holdStatus(cargoHold));
 
-/* Steal some fuel from the shuttle:
- * /
+
+
+let dontBeSus = function (a) {
+  if (checkFuel(a) === 'green') {
+    return a - 100001;
+  }
+  else if (checkFuel(a) === 'yellow') {
+    return a - 50001
+  }
+  else {
+    return a
+  }
+}
+console.log(dontBeSus (500000));
+
+let dontBeSus2 = function (argument){
+  if (argument == 'gold') {
+    return "swag"
+  } else {
+    return argument
+  }
+}
+console.log(cargoHold.map(dontBeSus2));
+
+let irs = function (levelOfFuel, itemsInCargoHold) {
+
+}
+
+
+
+//* Steal some fuel from the shuttle:
  
 //a). Define an anonymous function and set it equal to a variable with a normal, non-suspicious name. The function takes one parameter. This will be the fuel level on the shuttle.
 
@@ -35,8 +66,7 @@ console.log("Hold status: " + holdStatus(cargoHold));
 
 //d). Decide where to best place your function call to gather our new fuel.
 
-/* Next, liberate some of that glorious cargo.
- * /
+//* Next, liberate some of that glorious cargo.
 
 //a). Define another anonymous function with an array as a parameter, and set it equal to another innocent variable.
 
@@ -46,8 +76,8 @@ console.log("Hold status: " + holdStatus(cargoHold));
 
 //d). Don’t get hasty, matey! Remember to test your function.
 
-/* Finally, you need to print a receipt for the accountant. Don’t laugh! That genius knows MATH and saves us more gold than you can imagine.
- * /
+//* Finally, you need to print a receipt for the accountant. Don’t laugh! That genius knows MATH and saves us more gold than you can imagine.
+
  
 //a). Define a function called irs that can take fuelLevel and cargoHold as arguments.
 	
